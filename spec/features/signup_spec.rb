@@ -12,6 +12,7 @@ describe 'Sign up' do
       fill_in 'Last Name', with: 'invalid_last_name'
       fill_in 'Cpf', with: 'invalid_cpf'
       fill_in 'Email', with: 'invalid_email'
+      fill_in 'Address', with: 'invalid_address'
       fill_in 'Password', with: 'invalid', match: :prefer_exact
       fill_in 'Password confirmation', with: 'unmatched_password'
 
@@ -27,6 +28,7 @@ describe 'Sign up' do
       fill_in 'Last Name', with: user.last_name
       fill_in 'Cpf', with: user.cpf
       fill_in 'Email', with: user.email
+      fill_in 'Address', with: user.address
       fill_in 'Password', with: user.password, match: :prefer_exact
       fill_in 'Password confirmation', with: user.password
 
