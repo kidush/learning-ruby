@@ -8,6 +8,7 @@
     <%= f.input :last_name, label: "Last Name", required: true %>
     <%= f.input :cpf, required: true %>
     <%= f.input :email, required: true, autofocus: true %>
+    <%= f.input :address %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
       <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
